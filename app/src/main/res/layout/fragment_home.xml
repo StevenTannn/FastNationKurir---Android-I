@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/containerimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+        <ImageView
+            android:id="@+id/iv_notif"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/notification"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/containerimg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo, "
+        android:textSize="25dp"
+        android:layout_below="@+id/iv_logo"/>
+    <TextView
+        android:id="@+id/tv_showname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_fast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUICK DELIVERY"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+    <TextView
+        android:id="@+id/tv_priceless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECONOMIC PRICE"
+        android:textSize="30dp"
+        android:layout_below="@id/tv_fast"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tv_cs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24/7 CUSTOMER SERVICE"
+        android:textSize="30dp"
+        android:layout_below="@id/tv_priceless"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btn_outlet"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_cs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Outlet"/>
+</RelativeLayout>

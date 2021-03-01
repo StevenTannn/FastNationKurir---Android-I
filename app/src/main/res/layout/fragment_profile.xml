@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/iv_logo1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:id="@+id/namashow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/iv_logo1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halo, "
+            android:textSize="25dp"
+            android:layout_below="@+id/iv_logo"/>
+        <TextView
+            android:id="@+id/tv_showname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_pro"
+        android:layout_below="@+id/namashow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:id="@+id/et_namanama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_pro"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama : "
+            android:textSize="25dp"
+            android:layout_below="@+id/iv_logo"/>
+        <EditText
+            android:id="@+id/et_gantinama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Change Name"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_namanama"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Change Biodata"/>
+</RelativeLayout>
+

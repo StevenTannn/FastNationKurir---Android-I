@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_idennoresi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO RESI :" />
+            <TextView
+                android:id="@+id/tv_idennamapengirim"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv_idennoresi"
+                android:layout_height="wrap_content"
+                android:text="NAMA PENGIRIM :"/>
+            <TextView
+                android:id="@+id/tv_idennamapenerima"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv_idennamapengirim"
+                android:layout_height="wrap_content"
+                android:text="NAMA PENENERIMA :"/>
+
+            <TextView
+                android:id="@+id/tv_idenkotaasal"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv_idennamapenerima"
+                android:layout_height="wrap_content"
+                android:text="KOTA ASAL :"/>
+            <TextView
+                android:id="@+id/tv_idenkotatujuan"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv_idenkotaasal"
+                android:layout_height="wrap_content"
+                android:text="KOTA TUJUAN :"/>
+
+            <TextView
+                android:id="@+id/tv_idenstatus"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tv_idenkotatujuan"
+                android:layout_height="wrap_content"
+                android:text="STATUS :"/>
+            <TextView
+                android:id="@+id/tv_resinoresi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_idennoresi"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_resinamapengirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_resinoresi"
+                android:layout_toEndOf="@id/tv_idennamapengirim"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_resinamapenerima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_resinamapengirim"
+                android:layout_toEndOf="@id/tv_idennamapenerima"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_resikotaasal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_resinamapenerima"
+                android:layout_toEndOf="@id/tv_idenkotaasal"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_resikotatujuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_resikotaasal"
+                android:layout_toEndOf="@id/tv_idenkotatujuan"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_resistatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_resikotatujuan"
+                android:layout_toEndOf="@id/tv_idenstatus"
+                android:text=""/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

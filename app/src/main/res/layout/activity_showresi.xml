@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowresiActivity">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil Pengecekan Resi"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_idennoresi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO RESI : " />
+        <TextView
+            android:id="@+id/tv_idennamapengirim"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_idennoresi"
+            android:layout_height="wrap_content"
+            android:text="NAMA PENGIRIM : "/>
+        <TextView
+            android:id="@+id/tv_idennamapenerima"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_idennamapengirim"
+            android:layout_height="wrap_content"
+            android:text="NAMA PENENERIMA : "/>
+
+        <TextView
+            android:id="@+id/tv_idenkotaasal"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_idennamapenerima"
+            android:layout_height="wrap_content"
+            android:text="KOTA ASAL : "/>
+        <TextView
+            android:id="@+id/tv_idenkotatujuan"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_idenkotaasal"
+            android:layout_height="wrap_content"
+            android:text="KOTA TUJUAN : "/>
+
+        <TextView
+            android:id="@+id/tv_idenstatus"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_idenkotatujuan"
+            android:layout_height="wrap_content"
+            android:text="STATUS : "/>
+        <TextView
+            android:id="@+id/tv_resinoresi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_idennoresi"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_resinamapengirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_resinoresi"
+            android:layout_toEndOf="@id/tv_idennamapengirim"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_resinamapenerima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_resinamapengirim"
+            android:layout_toEndOf="@id/tv_idennamapenerima"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_resikotaasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_resinamapenerima"
+            android:layout_toEndOf="@id/tv_idenkotaasal"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_resikotatujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_resikotaasal"
+            android:layout_toEndOf="@id/tv_idenkotatujuan"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_resistatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_resikotatujuan"
+            android:layout_toEndOf="@id/tv_idenstatus"
+            android:text=""/>
+        <Button
+            android:id="@+id/btn_saveresi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/textButtonColor"
+            android:layout_below="@+id/tv_resistatus"
+            android:text="Simpan Resi"/>
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/textButtonColor"
+            android:layout_below="@+id/btn_saveresi"
+            android:text="Back to Home"/>
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="start"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_item" />
+</RelativeLayout>
